@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCSS+RWD Workshop</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="head">
+        <h1>CYBAGE</h1>
+        <h4>Delivering Value. Scientifically.</h4>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="#">CYBAGE</a>
+        <a href="#" class="active">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <h4>About Me</h4>
+            <p>Photo of me</p>
+            <img src="../IMG/1.jfif" alt="">
+            <p>Elon Reeve Musk FRS (/ ˈiːlɒn /; born June 28, 1971) is an entrepreneur and business magnate. He is the founder,
+                CEO, and Chief Engineer at SpaceX; early-stage investor, CEO, and Product Architect of Tesla, Inc.; founder
+                of The Boring Company; and co-founder of Neuralink and OpenAI.</p>
+        </div>
+        <div class="flex-item-right">
+            <h4>Company Infrastructure</h4>
+            <p>Clicked on Aug 2021</p>
+            <img src="../IMG/2.jfif" alt="">
+            <p>Cybage Software Pvt. Ltd. (Headquarters)<br> Cybage Towers<br> Survey No 13A/ 1+2+3/1 <br> Wadgaon Sheri <br>                Pune, Maharashtra- 411014<br> Ph: +91-20-66041700<br> Fax: +91-20-66041701<br> Email: Business@cybage.com</p>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <h4>Some Links</h4>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </div>
+        <div class="flex-item-right">
+            <h4>Events</h4>
+            <p>Clicked on June 2021</p>
+            <img src="../IMG/3.jpg" alt="">
+            <p>Trees help to restrict global warming by absorbing hazardous carbon dioxide from the environment. They remove
+                and store carbon and release oxygen back into the air. Considering the importance of trees, various types
+                of trees such as neem, Java plum, banyan, blue gum, conocarpus, royal poinciana, moringa oleifera were planted.
+                Cybage CSR Executives and Cybage volunteers, support staff and enthusiastic villagers planted a total of
+                300 trees.</p>
+        </div>
+    </div>
+</body>
+
+</html>
