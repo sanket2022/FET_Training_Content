@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Embedding Script tag in HTML Document</title>
+    <script>
+        var headParam = 50;
+    </script>
+    <hr>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <script>
+        var bodyParam = 100;
+    </script>
+
+    <script src="./common.js"></script>
+    <script>
+        addNumbers(headParam, bodyParam);
+    </script>
+    <hr>
+</body>
+
+</html>

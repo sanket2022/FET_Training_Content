@@ -1,0 +1,54 @@
+<!--
+<html>
+<head>
+    <title>Canvas Demo</title>
+</head>
+<body>
+    <canvas width="300px" height="300px">
+        Canvas Does not Support your Browser
+    </canvas>
+    <script scr="./canvasPage.js"></script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <script>
+        var context=document.querySelector('canvas').getContext('2d');
+
+        context.beginPath();
+        context.arc(75,75,50,0,Math.PI*2,true);
+        context.fillStyle="yellow";
+        context.fill();
+        context.moveTo(110,75);
+
+        context.arc(75,75,35,0,Math.PI,false);
+        context.moveTo(65,65);
+        context.strokeStyle="black";
+        context.stroke();
+        context.closePath();
+
+        context.beginPath();
+        context.fillStyle="black";
+        context.arc(60,65,5,0,Math.PI*2,true);
+        context.fill();
+        context.moveTo(95,65);
+        context.arc(90,65,5,0,Math.PI*2,true);
+        context.fill();
+
+        context.stroke();
+        context.closePath();
+    </script>
+</body>
+
+</html>

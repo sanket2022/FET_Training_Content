@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dom 3 Demo</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">This is a Paragraph.</p>
+        <p id="p2">This is another Paragraph.</p>
+    </div>
+    <script>
+        var tag = document.createElement("p");
+        var text = document.createTextNode("This is New.");
+        tag.appendChild(text);
+        var element = document.getElementById("div1");
+        element.appendChild(tag);
+    </script>
+</body>
+</html>

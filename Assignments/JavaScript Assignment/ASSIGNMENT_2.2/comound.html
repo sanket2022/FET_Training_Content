@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compound Interest Calculator</title>
+</head>
+
+<body>
+    <div>
+        <h2>Compound Interest Calculator</h2>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>Principal : </td>
+                <td><input type="text" id="principal" name="principal"> </td>
+            </tr>
+            <tr>
+                <td>Rate of Interest : </td>
+                <td><input type="text" id="interest" name="interest"> </td>
+            </tr>
+            <tr>
+                <td>Period in Years : </td>
+                <td><input type="text" id="year" name="year"> </td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate()">Calculate</button></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function calculate() {
+            let p = document.getElementById("principal").value
+            let i = document.getElementById("interest").value
+            let n = document.getElementById("year").value
+            let result = p*(Math.pow(1+(i/100),n));
+            let ans = result - p;
+            document.write("Total Payable by the User : "+ans);
+        }
+    </script>
+</body>
+
+</html>
